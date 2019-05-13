@@ -46,7 +46,7 @@ class ItemModal extends Component {
 
   render(){
     return (
-      <div>
+      <div className="d-flex justify-content-end">
         <Button
           color="dark"
           style={{marginBottom: '2rem'}}

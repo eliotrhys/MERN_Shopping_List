@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AppNavbar from './components/AppNavbar';
 import ShoppingList from './components/ShoppingList';
 import ItemModal from './components/ItemModal';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -17,8 +17,12 @@ class App extends Component {
         <div className="App">
           <AppNavbar />
           <Container>
-            <ItemModal />
-            <ShoppingList />
+            <Row>
+              <Col sm="12" md={{ size: 6, offset: 3 }}>
+                <ItemModal />
+                <ShoppingList />
+              </Col>
+            </Row>
           </Container>
         </div>
       </Provider>
